@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Calculo de área Trapézio</h1>
+    <p>(Clique em inspecionar e abra o console!)</p>
+
+    <script>
+    function calcTrap(base1, base2, altura) {  
+    return ((base1 + base2) * altura) / 2;
+    }
+    const base1 = 10;
+    const base2 = 5;  
+    const altura = 3;
+    
+    let area = calcTrap(base1, base2, altura);
+
+    alert(`A área do trapézio ${base1}, ${base2} e ${altura} é: ${area}`);
+    </script>
+</body>
+</html>
+
+<!--A = (a + b)h/2-->
+<!--Lado + Lado * Altura / 2-->

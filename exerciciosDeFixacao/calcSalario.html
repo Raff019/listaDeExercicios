@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+       let salario = parseFloat(prompt("Digite seu salário:"));
+       let percentual = parseFloat(prompt("Digite o percentual:"));
+
+       function calculo(salarioAtual, percentualAumento) {
+           let aumento = (percentualAumento / 100) * salarioAtual;
+           let salarioNovo = salarioAtual + aumento;
+           return salarioNovo;
+       }
+       let salarioAtual = calculo(salario, percentual);
+
+       alert(`Agora você recebe: R$${salarioAtual.toFixed(2)}`);
+    </script>
+</body>
+</html>

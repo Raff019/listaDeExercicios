@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Calculo de media do estudante</h1>
+    <script>
+        let media1 = parseFloat(prompt("Digite sua primeira media: "));
+        let media2 = parseFloat(prompt("Agora sua segunda media: "));
+        let media3 = parseFloat(prompt("E por fim sua terceira media: "));
+
+        function media(media1, media2, media3){
+            let mediaFinal = (media1 + media2 + media3) /3;
+            return Math.round(mediaFinal);
+        }
+        let mediaFinal = media(media1, media2, media3);
+
+        alert(`A media entre todas as suas notas é ${mediaFinal}`);
+    </script>
+</body>
+</html>

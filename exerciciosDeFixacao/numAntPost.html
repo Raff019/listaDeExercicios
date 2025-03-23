@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <script>
+        let numUsu = parseInt(prompt("Digite um numero: "));
+
+        function postAnt(numUsu){
+        let ant = numUsu - 1;
+        let post = numUsu + 1;
+        return {ant, post};
+        }
+        let resultado = postAnt(numUsu);
+
+        alert(`Seu numero é ${numUsu}, o anterior a ele é ${resultado.ant} e o posterior é ${resultado.post}`);
+    </script>
+</body>
+</html>

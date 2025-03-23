@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Calculo de desconto do seu produto!</h1>
+    <script>
+  let produto = parseFloat(prompt("Digite o valor do seu produto:"));
+
+function calculo(produto) {
+    let desconto = (produto * 10) / 100; 
+    let precoFinal = produto - desconto;
+    return precoFinal; 
+}
+
+let precoFinal = calculo(produto);
+
+alert(`Agora você vai ter que pagar R$${precoFinal.toFixed(2)}`);
+</script>
+</body>
+</html>
